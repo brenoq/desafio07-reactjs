@@ -2,8 +2,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation, Pagination } from "swiper";
 import { Box, Flex, Text } from "@chakra-ui/react";
 
-import "swiper/swiper-bundle.css";
-
 SwiperCore.use([Navigation, Pagination])
 
 export function Carrousel() {
