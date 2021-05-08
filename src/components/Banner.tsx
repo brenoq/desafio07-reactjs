@@ -1,6 +1,11 @@
-import { Box, Flex, Image, Text } from "@chakra-ui/react";
+import { Box, Flex, Image, Text, useBreakpointValue } from "@chakra-ui/react";
 
 export function Banner() {
+  const isWideVersion = useBreakpointValue({
+    base: false,
+    lg: true,
+  });
+
   return (
     <Box 
       w="100%"
@@ -34,12 +39,15 @@ export function Banner() {
             Chegou a hora de tirar do papel a viagem que você sempre sonhou.
           </Text>
         </Flex>
-        <Image 
-          src="/images/airplane.svg" 
-          alt="airplane" 
-          mt="20"
-          mr="36"
-        />
+
+        { isWideVersion && 
+          <Image 
+            src="/images/airplane.svg" 
+            alt="airplane" 
+            mt="20"
+            mr="36"
+          />
+        }
       </Flex>
     </Box>
   );

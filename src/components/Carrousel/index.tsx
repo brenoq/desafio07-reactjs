@@ -10,7 +10,7 @@ export function Carrousel() {
       m="0 auto"
       mt="14"
       mb="10"
-      w="1240px" 
+      w="100%" 
     >
       <Swiper
         id="main"
@@ -25,7 +25,7 @@ export function Carrousel() {
             bgRepeat="no-repeat"
             align="center" 
             justify="center"
-            w="1240px"
+            w="100%"
             h="450px"
           >
             <Box color="white" textAlign="center" fontWeight="700">
@@ -42,7 +42,7 @@ export function Carrousel() {
             bgRepeat="no-repeat"
             align="center" 
             justify="center"
-            w="1240px"
+            w="100%"
             h="450px"
           >
             <Box color="white" textAlign="center" fontWeight="700">
